@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FinSave</title>
+  <meta name="description" content="FinSave — set goals, track spending, and grow your savings.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230f766e'/><text x='16' y='22' font-size='18' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'>F</text></svg>">
+  <style>
+    :root {
+      --bg: #f7faf9;
+      --surface: #ffffff;
+      --text: #10201d;
+      --muted: #5b6b68;
+      --brand: #0f766e;
+      --brand-strong: #0b5c56;
+      --accent: #e8f5f3;
+      --border: #dbe5e3;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0c1413;
+        --surface: #132120;
+        --text: #e6efed;
+        --muted: #9db0ac;
+        --brand: #2dd4bf;
+        --brand-strong: #5eead4;
+        --accent: #16302d;
+        --border: #24403c;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+    header { padding: 20px 0; }
+    nav { display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-weight: 800; font-size: 1.3rem; color: var(--brand); text-decoration: none; }
+    .btn {
+      display: inline-block; padding: 12px 22px; border-radius: 10px;
+      background: var(--brand); color: #fff; font-weight: 600; text-decoration: none;
+      border: none; cursor: pointer; font-size: 1rem;
+    }
+    @media (prefers-color-scheme: dark) { .btn { color: #062b27; } }
+    .btn:hover { background: var(--brand-strong); }
+    .btn.ghost { background: transparent; color: var(--brand); border: 1px solid var(--border); }
+    .hero { padding: 72px 0 56px; text-align: center; }
+    .hero h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); line-height: 1.1; letter-spacing: -0.02em; }
+    .hero h1 span { color: var(--brand); }
+    .hero p { color: var(--muted); font-size: 1.15rem; max-width: 560px; margin: 20px auto 32px; }
+    .cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; padding: 40px 0 72px; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 28px; }
+    .icon { width: 44px; height: 44px; border-radius: 12px; background: var(--accent); display: grid; place-items: center; font-size: 1.4rem; margin-bottom: 16px; }
+    .card h3 { margin-bottom: 8px; }
+    .card p { color: var(--muted); }
+    .signup { background: var(--accent); border-radius: 20px; padding: 48px 24px; text-align: center; margin-bottom: 72px; }
+    .signup h2 { font-size: 1.8rem; margin-bottom: 8px; }
+    .signup p { color: var(--muted); margin-bottom: 24px; }
+    footer { border-top: 1px solid var(--border); padding: 24px 0; color: var(--muted); font-size: 0.9rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <nav>
+      <a class="logo" href="/">FinSave</a>
+      <a class="btn ghost" href="#get-started">Get started</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>Save smarter,<br><span>reach goals faster.</span></h1>
+      <p>FinSave helps you set savings goals, see where your money goes, and build habits that stick.</p>
+      <div class="cta">
+        <a class="btn" href="#get-started">Start saving</a>
+        <a class="btn ghost" href="#features">See how it works</a>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="card">
+        <div class="icon">🎯</div>
+        <h3>Goal tracking</h3>
+        <p>Create goals for a trip, an emergency fund or a new laptop, and watch your progress grow.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📊</div>
+        <h3>Spending insights</h3>
+        <p>Clear breakdowns of where your money goes each month, by category.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🔔</div>
+        <h3>Smart reminders</h3>
+        <p>Gentle nudges to keep you on track, without the noise.</p>
+      </div>
+    </section>
+
+    <section class="signup" id="get-started">
+      <h2>Coming soon</h2>
+      <p>FinSave is in early development. Check back soon.</p>
+    </section>
+  </main>
+
+  <footer class="wrap">© 2026 FinSave</footer>
+</body>
+</html>
